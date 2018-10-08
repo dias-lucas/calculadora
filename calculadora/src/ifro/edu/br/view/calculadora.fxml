@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="229.0" prefWidth="316.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ifro.edu.br.control.CalculadoraController">
+    <children>
+      <VBox prefHeight="348.0" prefWidth="494.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="70.0" prefWidth="316.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="57.0">
+                           <image>
+                              <Image url="@../../../../img/iconcalculadora.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Calculadora">
+                           <font>
+                              <Font name="Verdana" size="30.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Separator>
+            <VBox prefHeight="38.0" prefWidth="316.0">
+               <children>
+                  <TextField fx:id="txtResultado" prefHeight="73.0" prefWidth="457.0">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <Separator layoutX="10.0" layoutY="77.0" prefWidth="200.0" />
+            <VBox layoutX="10.0" layoutY="81.0" prefHeight="154.0" prefWidth="316.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="316.0">
+                     <children>
+                        <TextField fx:id="txtUm" prefHeight="25.0" prefWidth="216.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="txtDois" prefHeight="25.0" prefWidth="222.0">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="35.0" prefWidth="316.0">
+                     <children>
+                        <Button fx:id="btnSoma" mnemonicParsing="false" onAction="#somar" prefHeight="25.0" prefWidth="78.0" text="Somar">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnDividi" mnemonicParsing="false" onAction="#dividir" prefHeight="25.0" prefWidth="78.0" text="Dividir">
+                           <HBox.margin>
+                              <Insets right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnSubtrair" mnemonicParsing="false" onAction="#subtrai" prefHeight="25.0" prefWidth="78.0" text="Subtrair">
+                           <HBox.margin>
+                              <Insets right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnMultiplicar" mnemonicParsing="false" onAction="#multiplica" prefHeight="25.0" prefWidth="78.0" text="Multiplicar">
+                           <HBox.margin>
+                              <Insets right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+         </children>
+</AnchorPane>
